@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Open Source Tech — Learn. Build. Grow.</title>
+  <meta name="description"
+    content="A student and developer community focused on practical learning, real projects, and strong peer collaboration in modern technologies." />
+  <meta name="author" content="Open Source Tech Community" />
+  <meta property="og:title" content="Open Source Tech Community" />
+  <meta property="og:description" content="Learn, Build, and Grow with a Real Tech Community." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Outfit:wght@200;300;400;500&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="opensource tech logo.jpeg" type="image/jpeg" />
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#C9A96E">
+</head>
+
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loader">
+    <div class="loader-inner">
+      <img src="opensource tech logo.jpeg" alt="Open Source Tech" class="loader-logo" width="120" height="120"
+        style="display:block;" />
+      <div class="loader-sphere"></div>
+      <p class="loader-text">Initialising Space</p>
+    </div>
+  </div>
+
+  <!-- Top Navigation -->
+  <nav id="nav">
+    <a href="/" class="nav-logo" id="nav-logo-link">
+      <div class="nav-logo-chip">
+        <img src="opensource tech logo.jpeg" alt="Open Source Tech" class="nav-logo-img" />
+      </div>
+      <span class="logo-full">Open Source Tech</span>
+      <span class="mobile-logo-text">Open Source Tech</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about" data-target="about" class="nav-link">About</a></li>
+      <li><a href="#activities" data-target="activities" class="nav-link">Activities</a></li>
+      <li><a href="#resources" data-target="resources" class="nav-link">Resources</a></li>
+      <li><a href="#connect" data-target="connect" class="nav-link">Connect</a></li>
+    </ul>
+    <a href="https://chat.whatsapp.com/BqyJTWr9iXh6Z7IisCwiUT" target="_blank" class="nav-cta" id="nav-join-btn">Join
+      Community</a>
+    <!-- Hamburger (mobile only) -->
+    <button class="nav-hamburger" id="hamburger-btn" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile dropdown menu -->
+  <div id="mobile-menu" aria-hidden="true">
+    <ul class="mobile-menu-links">
+      <li><a href="#about" data-target="about" class="mobile-nav-link">About</a></li>
+      <li><a href="#activities" data-target="activities" class="mobile-nav-link">Activities</a></li>
+      <li><a href="#resources" data-target="resources" class="mobile-nav-link">Resources</a></li>
+      <li><a href="#connect" data-target="connect" class="mobile-nav-link">Connect</a></li>
+    </ul>
+    <a href="https://chat.whatsapp.com/BqyJTWr9iXh6Z7IisCwiUT" target="_blank" class="btn-primary mobile-menu-cta">Join
+      Community</a>
+  </div>
+
+  <!-- Canvas container -->
+  <canvas id="c"></canvas>
+
+  <!-- HUD: Hero Title overlay -->
+  <div id="hero-hud">
+    <div class="hero-eyebrow">Student &amp; Developer Community</div>
+    <h1 class="hero-title">Learn.<br />Build.<br /><em>Grow.</em></h1>
+    <p class="hero-sub">Practical workshops, real projects, and strong peer<br />learning for students and developers
+      ready to make an impact.</p>
+    <div class="hero-actions">
+      <a href="https://chat.whatsapp.com/BqyJTWr9iXh6Z7IisCwiUT" target="_blank" class="btn-primary"
+        id="hero-join-btn">Join Community</a>
+      <button class="btn-ghost" id="explore-btn">Explore Space</button>
+    </div>
+
+  </div>
+
+
+
+  <!-- Floating Info Panels (revealed on camera fly-to) -->
+  <div class="info-panel" id="panel-about" data-node="about">
+    <div class="panel-glass">
+      <div class="panel-tag">Who We Are</div>
+      <h2 class="panel-title">A Community<br />Built for Builders</h2>
+      <p class="panel-body">Our mission is to enable students and developers to grow through practical learning, real
+        projects, and strong community support. We are a space for ambitious minds who share the same passion to learn,
+        build, and connect.</p>
+      <div class="panel-pills">
+        <span class="pill">Students</span>
+        <span class="pill">Developers</span>
+        <span class="pill">AI Enthusiasts</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-panel" id="panel-activities" data-node="activities">
+    <div class="panel-glass">
+      <div class="panel-tag">What We Do</div>
+      <h2 class="panel-title">Four Pillars of<br />Growth</h2>
+      <ul class="panel-list">
+        <li><span class="list-icon">◈</span>
+          <div><strong>Team Projects</strong>
+            <p>Collaborative work on real projects to strengthen portfolios and teamwork.</p>
+          </div>
+        </li>
+        <li><span class="list-icon">◈</span>
+          <div><strong>Learning Resources</strong>
+            <p>Curated guides, session recordings, and a shared knowledge base.</p>
+          </div>
+        </li>
+        <li><span class="list-icon">◈</span>
+          <div><strong>Open Source</strong>
+            <p>Contributing to community projects to build a public portfolio.</p>
+          </div>
+        </li>
+        <li><span class="list-icon">◈</span>
+          <div><strong>Events &amp; Meetups</strong>
+            <p>Workshops, hackathons, and networking nights.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="info-panel" id="panel-resources" data-node="resources">
+    <div class="panel-glass">
+      <div class="panel-tag">Knowledge Hub</div>
+      <h2 class="panel-title">Everything You<br />Need to Level Up</h2>
+      <div class="resource-grid">
+        <div class="r-card">
+          <div class="r-icon">◻</div><strong>Learning Guides</strong>
+          <p>Structured paths for foundational and advanced topics.</p>
+        </div>
+        <div class="r-card">
+          <div class="r-icon">◻</div><strong>Session Recordings</strong>
+          <p>Recorded workshops and talks for self-paced learning.</p>
+        </div>
+        <div class="r-card">
+          <div class="r-icon">◻</div><strong>Study Materials</strong>
+          <p>Curated notes, reference docs, and implementation resources.</p>
+        </div>
+        <div class="r-card">
+          <div class="r-icon">◻</div><strong>Peer Q&amp;A</strong>
+          <p>Community discussions and peer-to-peer problem solving.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-panel" id="panel-connect" data-node="connect">
+    <div class="panel-glass">
+      <div class="panel-tag">Join the Movement</div>
+      <h2 class="panel-title">Ready to<br />Connect?</h2>
+      <p class="panel-body">Find us on the platforms you already use. Every builder starts as a stranger.</p>
+      <div class="connect-links">
+        <a href="https://chat.whatsapp.com/BqyJTWr9iXh6Z7IisCwiUT" target="_blank" class="connect-btn whatsapp">WhatsApp
+          Community</a>
+        <a href="https://www.linkedin.com/company/open-source-tech-community/" target="_blank"
+          class="connect-btn discord">Linkedin</a>
+        <a href="https://www.instagram.com/opensourcetech.in?igsh=MXY2OXBsOXc4Z2g5" target="_blank"
+          class="connect-btn telegram">Instagram</a>
+        <a href="mailto:Contact@opensourcetech.in" class="connect-btn email">Contact@opensourcetech.in</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Node Labels (3D overlays, positioned by JS) -->
+  <div id="node-labels"></div>
+
+  <!-- Three.js via CDN -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.163.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.163.0/examples/jsm/"
+    }
+  }
+  </script>
+  <script type="module" src="scene.js"></script>
+
+</body>
+
+</html>

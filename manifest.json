@@ -1,0 +1,23 @@
+{
+  "name": "Open Source Tech",
+  "short_name": "OST",
+  "description": "A student and developer community focused on practical learning, real projects, and strong peer collaboration.",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#C9A96E",
+  "background_color": "#F0F2F5",
+  "icons": [
+    {
+      "src": "opensource tech logo.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "opensource tech logo.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}
